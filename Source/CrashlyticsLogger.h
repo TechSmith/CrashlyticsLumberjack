@@ -9,4 +9,6 @@
 
 @interface CrashlyticsLogger : DDAbstractLogger
 
++(CrashlyticsLogger*) sharedInstance;
+
 @end

@@ -1,4 +1,3 @@
-
 Pod::Spec.new do |s|
   s.name         = "CrashlyticsLumberjack"
   s.version      = "1.0.0"
@@ -6,7 +5,7 @@ Pod::Spec.new do |s|
   
   s.homepage     = "http://github.com/TechSmith/CrashlyticsLumberjack"
 
-  s.license      = { :type => 'BSD', :file => 'LICENSE.md' }
+  s.license      = { :type => 'BSD', :file => 'LICENSE' }
 
   s.author       = { "Mike Simons" => "m.simons@techsmith.com" }
   

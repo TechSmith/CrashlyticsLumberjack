@@ -13,7 +13,7 @@ CrashlyticsLumberjack is a bridge between [Crashlytics](http://support.crashlyti
 
 This code uses ARC.
 
-####Example:
+#####Example:
 
 ```objective-c
 #import <CrashlyticsLumberjack/CrashlyticsLogger.h>
@@ -23,3 +23,8 @@ This code uses ARC.
 
 
 ```
+
+
+##License
+
+BSD 3-Clause, see http://www.opensource.org/licenses/BSD-3-Clause

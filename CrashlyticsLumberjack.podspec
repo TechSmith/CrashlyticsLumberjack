@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CrashlyticsLumberjack"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "A Crashlytics Logging->CocoaLumberjack Bridge."  
   s.homepage     = "http://github.com/TechSmith/CrashlyticsLumberjack"
   s.license      = { :type => 'BSD', :file => 'LICENSE' }

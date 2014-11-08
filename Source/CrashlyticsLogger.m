@@ -15,9 +15,9 @@ OBJC_EXTERN void CLSLog(NSString *format, ...) NS_FORMAT_FUNCTION(1,2);
 {
     NSString *logMsg = logMessage.message;
     
-    if (self.logFormatter)
+    if (_logFormatter)
     {
-        logMsg = [self.logFormatter formatLogMessage:logMessage];
+        logMsg = [_logFormatter formatLogMessage:logMessage];
     }
     
     if (logMsg)

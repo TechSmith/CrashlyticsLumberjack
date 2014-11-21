@@ -11,14 +11,9 @@ OBJC_EXTERN void CLSLog(NSString *format, ...) NS_FORMAT_FUNCTION(1,2);
 
 @implementation CrashlyticsLogger
 
--(void) logMessage:(DDLogMessage *)logMessage
+- (void)logMessage:(DDLogMessage *)logMessage
 {
-    NSString *logMsg = logMessage->_message;
-    
-    if (_logFormatter)
-    {
-        logMsg = [_logFormatter formatLogMessage:logMessage];
-    }
+    NSString *logMsg = logMessage.message;
     
     if (logMsg)
     {
@@ -26,8 +21,7 @@ OBJC_EXTERN void CLSLog(NSString *format, ...) NS_FORMAT_FUNCTION(1,2);
     }
 }
 
-
-+(CrashlyticsLogger*) sharedInstance
++ (CrashlyticsLogger*)sharedInstance
 {
     static dispatch_once_t pred = 0;
     static CrashlyticsLogger *_sharedInstance = nil;
@@ -40,3 +34,4 @@ OBJC_EXTERN void CLSLog(NSString *format, ...) NS_FORMAT_FUNCTION(1,2);
 }
 
 @end
+

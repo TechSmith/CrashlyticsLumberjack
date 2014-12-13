@@ -5,7 +5,7 @@
 //  Copyright (c) 2013 TechSmith. All rights reserved.
 //
 
-#import <CocoaLumberjack/DDLog.h>
+#import <CocoaLumberjack/CocoaLumberjack.h>
 
 @interface CrashlyticsLogger : DDAbstractLogger
 

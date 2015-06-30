@@ -6,7 +6,7 @@ CrashlyticsLumberjack is a bridge between [Crashlytics](http://support.crashlyti
 
 ##Using
 - Add `pod 'CrashlyticsLumberjack', '~>1.0.0'` to your podfile.
-- For Cococalumberjack 2.0 support add `pod 'CrashlyticsLumberjack', '=2.0.0-beta4'`
+- For Cococalumberjack 2.0 support, add `pod 'CrashlyticsLumberjack', '~> 2.0.0'`
 
 
 *OR*

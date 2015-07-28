@@ -10,14 +10,11 @@ Pod::Spec.new do |s|
   s.source_files  = 'Source', 'Source/CrashlyticsLogger.{h,m}'
   s.requires_arc  = true
 
-  s.osx.deployment_target = '10.7'
-  s.ios.deployment_target = '5.0'
+  s.osx.deployment_target = '10.8'
+  s.ios.deployment_target = '8.0'
 
   s.dependency 'CocoaLumberjack/Default', '~> 2.0.0'
-
-  s.subspec 'Framework' do |sp|
-  	sp.platform = :ios, '8.0'
-    sp.dependency 'CrashlyticsFramework', '~> 2.2'
-  end
+  s.ios.dependency 'Crashlytics'
+  s.osx.dependency 'Crashlytics-OSX'
 
 end

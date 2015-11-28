@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CrashlyticsLumberjack"
-  s.version      = "2.0.4"
+  s.version      = "2.0.5"
   s.summary      = "A Crashlytics Logging->CocoaLumberjack Bridge."  
   s.homepage     = "http://github.com/TechSmith/CrashlyticsLumberjack"
   s.license      = { :type => 'BSD', :file => 'LICENSE' }
@@ -11,10 +11,10 @@ Pod::Spec.new do |s|
   s.requires_arc  = true
 
   s.osx.deployment_target = '10.8'
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '7.0'
 
   s.dependency 'CocoaLumberjack/Default', '~> 2.2'
-  s.ios.dependency 'Crashlytics'
-  s.osx.dependency 'Crashlytics-OSX'
+  s.dependency 'Crashlytics'
+  
 
 end
